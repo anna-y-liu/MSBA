@@ -37,7 +37,7 @@ list<-append(list,list.files(path = "Project/ProjectData/s11/img/", pattern = ".
 list<-append(list,list.files(path = "Project/ProjectData/s12/img/", pattern = ".jpg",full.names = TRUE))
 list<-append(list,list.files(path = "Project/ProjectData/s13/img/", pattern = ".jpg",full.names = TRUE))
 list_of_images <- lapply(list,readImage)
-images <- lapply(list_of_images, resize,w=50,h=50)
+images <- lapply(list_of_images, resize,w=20,h=20)
 rm(list_of_images,list)
 
 #flatten image data
